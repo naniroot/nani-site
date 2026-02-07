@@ -2,5 +2,5 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/', // Base path for custom domain
+    base: '/nani-site/', // Base path for custom domain
 })
