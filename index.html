@@ -29,8 +29,8 @@
       <div class="fullname anim" style="--d:.18s">Narayana Ravikumar <span class="dot">·</span> Software Engineer</div>
 
       <p class="intro anim" style="--d:.24s">
-        I write software, then go optimize something — a ski line, a trail,
-        a factory (real <em>or</em> virtual), or a really good dinner.
+        I love writing software 💻, untangling complex problems 🧩, and finding
+        the easiest way to get things done. I run on deadlines ⏰.
       </p>
 
       <div class="row anim" style="--d:.32s">
@@ -82,8 +82,8 @@
       <div class="snap-wrap reveal" style="--rd:.05s">
         <figure class="snap">
           <span class="tape t3"></span>
-          <img class="slot-img" src="/hobbies/factory.jpg" alt="Factory automation game" />
-          <figcaption class="cap">spaghetti base, optimized 🏭</figcaption>
+          <img class="slot-img" src="/hobbies/gaming.jpg" alt="Gaming" />
+          <figcaption class="cap">controller in hand, one more run 🎮</figcaption>
         </figure>
       </div>
       <div class="snap-wrap reveal" style="--rd:.12s">
@@ -104,13 +104,13 @@
     <ul class="work-list">
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">🏭 Throughput — a factory-line optimizer</div>
+          <div class="work-name">📈 Kalshi Bot — 15-minute bitcoin predictions</div>
         </div>
-        <p class="work-teaser">A little tool that takes the messy spaghetti of a production line and untangles it into the fastest possible flow. Half serious side project, half excuse to keep playing factory games after work.</p>
+        <p class="work-teaser">A trading bot that lives on Kalshi and does exactly one thing: predict whether bitcoin will be up or down at the close of each 15-minute window, then place the bet. Small stakes, fast feedback, endless tuning.</p>
         <div class="work-more" id="work-more-1">
-          <p>It started as a spreadsheet I kept rebuilding every time I wanted to balance a new build in a factory game. Eventually the spreadsheet got embarrassing enough that I rewrote it as a proper solver: feed it a set of recipes, target outputs, and machine speeds, and it figures out how many of each machine you need, where the bottlenecks are, and which belts will choke first.</p>
-          <p>The fun part has been making the output legible. A wall of numbers is useless mid-build, so I'm rendering the whole plan as an interactive graph — nodes for machines, edges sized by throughput — that you can poke at to see what happens when you swap a recipe or overclock a node. It turns out the same constraint-solving that makes a virtual factory hum maps cleanly onto real scheduling problems, which is the part that keeps pulling me back to it.</p>
-          <p>Right now I'm cleaning up the solver so it handles loops and byproducts without falling over, and sketching a version that imports save files directly. If you've ever lost a weekend to belt math and have opinions about how this should work, I'd genuinely love to hear them — say hi above.</p>
+          <p>The appeal of 15-minute markets is the loop speed. Instead of waiting days to learn whether a thesis held, I get a verdict every quarter hour — which means the bot generates a mountain of labeled data fast, and I can iterate on features without dying of boredom. It pulls short-horizon price action, order-book imbalance, and a few volatility signals, then outputs a calibrated probability for the next close.</p>
+          <p>The hard part isn't the prediction, it's the discipline around it. Fees and the bid-ask spread quietly eat naive strategies alive, so most of the work has gone into position sizing and knowing when <em>not</em> to trade — the bot sits on its hands unless its edge clears a threshold. I treat calibration as the real scoreboard: being right 58% of the time is worthless if I thought it was 80%.</p>
+          <p>Right now it's paper-trading against live markets while I watch how the edge decays and whether it survives contact with real slippage. Next up is a proper backtest harness and a kill-switch that pulls it offline the moment its calibration drifts. It's equal parts trading experiment and an excuse to get serious about probabilistic forecasting.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-1">
           <span class="lbl">Read more</span><span class="car">▾</span>
@@ -119,13 +119,13 @@
 
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">🥾 Switchbacks — a trail-planning companion</div>
+          <div class="work-name">🎮 Story games — with a touch of strategy</div>
         </div>
-        <p class="work-teaser">A planner that turns a vague "let's go hike something this weekend" into a real route — matched to how much elevation my legs actually want and how much daylight is left.</p>
+        <p class="work-teaser">My favorite way to switch off: story-driven worlds with just enough strategy to keep my brain engaged — think Breath of the Wild, The Last of Us, and Subnautica.</p>
         <div class="work-more" id="work-more-2">
-          <p>The idea came from the annoying gap between trail databases and reality. Most apps will happily route you up something with twice the gain you bargained for, or drop you at a trailhead an hour after the good light is gone. I wanted something that reasons about the whole day, not just the line on the map.</p>
-          <p>So it pulls elevation profiles, recent trip reports, and a sunrise/sunset window, then ranks routes by how well they fit constraints I set up front — total gain, distance, how exposed I'm willing to be, whether there's a payoff view worth the slog. The output is a simple shortlist with the trade-offs spelled out, instead of an infinite scroll of options.</p>
-          <p>It's still rough — the trip-report parsing is held together with optimism — but it's already changed a couple of my weekends for the better. Next up is a packing-and-timing checklist that adapts to the route it picks.</p>
+          <p>What hooks me is the blend of narrative and systems. Breath of the Wild is the purest version of it — a world that hands you a physics sandbox and trusts you to be clever, where half the fun is solving a shrine in a way the designers clearly didn't plan for. I'll happily lose an evening to a single "what if I just…" experiment.</p>
+          <p>The Last of Us is the other pole: tightly authored, emotionally heavy, the kind of story that stays with me long after the credits. And Subnautica scratches a different itch entirely — that slow-burn loop of fear and mastery as an alien ocean goes from terrifying to home base, one careful expedition at a time.</p>
+          <p>The common thread is agency inside a world worth caring about. I'm less interested in twitch reflexes than in games that reward planning, curiosity, and the occasional reckless gamble. If you have a story-rich recommendation with a strategic streak, I'm all ears — say hi above.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-2">
           <span class="lbl">Read more</span><span class="car">▾</span>
@@ -134,13 +134,13 @@
 
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">🍳 Mise — notes from every meal worth remembering</div>
+          <div class="work-name">🧠 Growth mindset — the Carol Dweck kind</div>
         </div>
-        <p class="work-teaser">A tiny private journal for tasting menus and home experiments — less a recipe box, more a memory of what made a dish work and how I'd change it next time.</p>
+        <p class="work-teaser">An idea I keep coming back to: Dr. Carol S. Dweck's research on the growth mindset — the belief that ability is built through effort, not fixed at birth — and trying to actually live by it.</p>
         <div class="work-more" id="work-more-3">
-          <p>I take too many food photos and remember almost none of the details that matter — the temperature, the timing, the one substitution that saved the sauce. Mise is my attempt to capture the part of a meal that a photo can't: the reasoning behind it.</p>
-          <p>Each entry is fast to log — a few tags, what surprised me, what I'd push further — and over time it's quietly become a map of my own taste. I can pull up everything I've cooked with brown butter, or every dish that leaned on acidity to fix it, and actually see the patterns in what I keep reaching for.</p>
-          <p>The dream is to close the loop: let it suggest tweaks for the next attempt based on my own past notes. For now it's just a calm little log that makes me a slightly more deliberate cook, which is enough to keep me adding to it.</p>
+          <p>Dweck's core distinction is deceptively simple. A <em>fixed</em> mindset treats talent as a static thing you either have or don't, so every challenge becomes a referendum on whether you're good enough. A <em>growth</em> mindset treats ability as something you develop, which turns the same challenge into information — a place to get better rather than a verdict on your worth.</p>
+          <p>The part I find genuinely useful is what it does to failure. When I catch myself avoiding a hard problem because I might look bad, that's the fixed mindset talking. Reframing it as "I can't do this <em>yet</em>" sounds like a small trick, but it changes what I'm willing to attempt — and the discomfort of being a visible beginner stops feeling like evidence I don't belong.</p>
+          <p>I'm trying to bake it into how I work: chasing feedback instead of praise, treating effort as the point rather than proof of inadequacy, and noticing when I'm protecting an image instead of learning. It's less a project and more an ongoing practice — one I'm clearly still working on.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-3">
           <span class="lbl">Read more</span><span class="car">▾</span>
