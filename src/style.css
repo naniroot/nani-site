@@ -94,7 +94,7 @@ body {
 
 /* footer: socials + email */
 .row {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 22px;
   margin-top: clamp(20px, 2.4vw, 30px);
 }
 
@@ -219,8 +219,11 @@ body {
 
 @media (max-width: 920px) {
   .scene { grid-template-columns: 1fr; gap: 30px; padding-top: 44px; padding-bottom: 24px; height: auto; min-height: 0; }
-  .photo-wrap { order: -1; }
+  .photo-wrap { order: -1; margin-bottom: 24px; }
   .name { font-size: clamp(64px, 18vw, 110px); }
+  /* center the content + socials blocks in the stacked mobile layout (text stays left-aligned) */
+  .content { justify-self: center; max-width: 100%; }
+  .row { justify-content: center; }
   /* let the cue flow after the content instead of overlapping it */
   .scroll-cue { position: static; transform: none; margin: 6px auto 0; }
 }
