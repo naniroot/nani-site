@@ -106,13 +106,15 @@
     <ul class="work-list">
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">📈 Kalshi Bot — 15-minute bitcoin predictions</div>
+          <div class="work-name">📈 Kalshi Bot — foray into automated trading </div>
         </div>
-        <p class="work-teaser">A trading bot that lives on Kalshi and does exactly one thing: predict whether bitcoin will be up or down at the close of each 15-minute window, then place the bet. Small stakes, fast feedback, endless tuning.</p>
+        <p class="work-teaser">I used Claude to create a bot to automatically trade on Kalshi. I traded 15min Bitcoin up/down contracts. I iterated on several strategies and found success buying between the 10-12th minute mark only if odds are greater than 90%.</p>
         <div class="work-more" id="work-more-1">
-          <p>The appeal of 15-minute markets is the loop speed. Instead of waiting days to learn whether a thesis held, I get a verdict every quarter hour — which means the bot generates a mountain of labeled data fast, and I can iterate on features without dying of boredom. It pulls short-horizon price action, order-book imbalance, and a few volatility signals, then outputs a calibrated probability for the next close.</p>
-          <p>The hard part isn't the prediction, it's the discipline around it. Fees and the bid-ask spread quietly eat naive strategies alive, so most of the work has gone into position sizing and knowing when <em>not</em> to trade — the bot sits on its hands unless its edge clears a threshold. I treat calibration as the real scoreboard: being right 58% of the time is worthless if I thought it was 80%.</p>
-          <p>Right now it's paper-trading against live markets while I watch how the edge decays and whether it survives contact with real slippage. Next up is a proper backtest harness and a kill-switch that pulls it offline the moment its calibration drifts. It's equal parts trading experiment and an excuse to get serious about probabilistic forecasting.</p>
+          <p>Bitcoin prediction markets are liquid markets only during daytimes across the three main timezones in America. This implies the odds on the contracts are mostly efficient. If either &lsquo;up&rsquo; or &lsquo;down&rsquo; contract has 90% probability between the 10-12th minute mark, it is likely to go to 100%. My bot executed the &lsquo;picking pennies in front of a steamroller&rsquo; strategy to buy this contract and wait for completion.</p>
+          <p>I iterated various strategies like different minute marks, probability percentages, times of day but the above numbers gave me the most success over multiple days of experimenting with the bot. During low liquidity times at night, the price was too volatile for my strategy to work, so I kept it running only during the daytime.</p>
+          <p>If these markets are truly efficient then me trading on 90% probabilities means I lose 1 trade every 10 trades wiping out all the gains I made in 9 trades. The only reason I made pennies is because of stop loss. After I purchase between the 10-12th minute mark, I would check the price and if the price ever drops below 50c, I would sell the contract at the price available. This was the only reason my strategy ever made money.</p>
+          <p>Kalshi charges fees for &lsquo;<em>market taker</em>&rsquo;, so I structured trades to always work as a &lsquo;<em>maker</em>&rsquo;. Running the final successful strategy over seven days made me 50c on a $10 investment or a 5% return. This equates to a <strong>260% APR</strong>!!</p>
+          <p>Bitcoin is too volatile and I made several assumptions in this project that I was not confident to go all in. I also believe prediction markets are <em>gambling equivalent</em> and I didn&rsquo;t want to get pulled into it.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-1">
           <span class="lbl">Read more</span><span class="car">▾</span>
@@ -121,13 +123,14 @@
 
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">🎮 Story games — with a touch of strategy</div>
+          <div class="work-name">🧠 Growth Mindset </div>
         </div>
-        <p class="work-teaser">My favorite way to switch off: story-driven worlds with just enough strategy to keep my brain engaged — think Breath of the Wild, The Last of Us, and Subnautica.</p>
+        <p class="work-teaser">Reading &lsquo;Mindset&rsquo; by Dr. Carol Dweck has been transformational in my life. I am a huge fan of evolution science and human psychology. This book had the most impact on my life and thinking.</p>
         <div class="work-more" id="work-more-2">
-          <p>What hooks me is the blend of narrative and systems. Breath of the Wild is the purest version of it — a world that hands you a physics sandbox and trusts you to be clever, where half the fun is solving a shrine in a way the designers clearly didn't plan for. I'll happily lose an evening to a single "what if I just…" experiment.</p>
-          <p>The Last of Us is the other pole: tightly authored, emotionally heavy, the kind of story that stays with me long after the credits. And Subnautica scratches a different itch entirely — that slow-burn loop of fear and mastery as an alien ocean goes from terrifying to home base, one careful expedition at a time.</p>
-          <p>The common thread is agency inside a world worth caring about. I'm less interested in twitch reflexes than in games that reward planning, curiosity, and the occasional reckless gamble. If you have a story-rich recommendation with a strategic streak, I'm all ears — say hi above.</p>
+          <p>Both of my parents unknowingly had a fixed mindset, they believed our fate was pre-determined and few things could change it. Hard work was required but only to meet the potential we already possess. Existing talent and luck played a role in the outcome. I still believe luck plays a huge role, however Dr. Dweck&rsquo;s book completely changed my perspective. Her book showed me that even potential is not fixed and it can be increased. I no longer ask &lsquo;Can I do it?&rsquo;, I ask &lsquo;How can I do it?&rsquo;. A growth mindset is a way of thinking that simply gives your brain the permission to entertain the possibility of success that otherwise would not even be considered. As someone who grew up with a fixed mindset, I have to put in extra effort to overcome myself in all tasks.</p>
+          <p>Labelling was another concept that Dr. Dweck asked us to eliminate. It was like a psychological limiter that prevented us from going forward. Simply labelling &lsquo;I am bad at Math&rsquo; or &lsquo;this tool never works correctly&rsquo; blocks our mind from even considering an alternative possibility. I have since prohibited everyone in my family from labelling my toddler. Don&rsquo;t label her as &lsquo;good at sports&rsquo; or &lsquo;bad at speaking&rsquo; or as a &lsquo;helper&rsquo; etc. My toddler can be all of those things or none of those things, labelling will only serve to limit the potential.</p>
+          <p>The last concept I learnt was to appreciate effort and not only the result. She mentioned it in the context of kids. If kids get something naturally and don't put a lot of effort, a huge amount of praise will make kids think that things have to be easy and putting effort means you are not good at it and should be abandoned. By praising the effort rather than just the outcome, children internalize that mastery requires persistent dedication, ensuring that even the most naturally gifted understand the necessity of hard work to achieve true greatness. I believe this works on adults as well and needs continuous reinforcement.</p>
+          <p> Overall I highly recommend the book. I believe having a growth mindset is a better way to live life to its fullest potential.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-2">
           <span class="lbl">Read more</span><span class="car">▾</span>
@@ -136,18 +139,33 @@
 
       <li class="work-item reveal" data-expand>
         <div class="work-top">
-          <div class="work-name">🧠 Growth mindset — the Carol Dweck kind</div>
+          <div class="work-name">📝 Amateur Accounting - balance sheet, income statement, oh my! </div>
         </div>
-        <p class="work-teaser">An idea I keep coming back to: Dr. Carol S. Dweck's research on the growth mindset — the belief that ability is built through effort, not fixed at birth — and trying to actually live by it.</p>
+        <p class="work-teaser">Warren Buffett said &lsquo;accounting was the language of business&rsquo;. It is an essential toolkit required for successful investing. I was always curious and committed to learning the basics.</p>
         <div class="work-more" id="work-more-3">
-          <p>Dweck's core distinction is deceptively simple. A <em>fixed</em> mindset treats talent as a static thing you either have or don't, so every challenge becomes a referendum on whether you're good enough. A <em>growth</em> mindset treats ability as something you develop, which turns the same challenge into information — a place to get better rather than a verdict on your worth.</p>
-          <p>The part I find genuinely useful is what it does to failure. When I catch myself avoiding a hard problem because I might look bad, that's the fixed mindset talking. Reframing it as "I can't do this <em>yet</em>" sounds like a small trick, but it changes what I'm willing to attempt — and the discomfort of being a visible beginner stops feeling like evidence I don't belong.</p>
-          <p>I'm trying to bake it into how I work: chasing feedback instead of praise, treating effort as the point rather than proof of inadequacy, and noticing when I'm protecting an image instead of learning. It's less a project and more an ongoing practice — one I'm clearly still working on.</p>
+          <p>I came across this book called &lsquo;The Accounting Game&rsquo; that was recommended by my co-workers. It explained accounting concepts from the perspective of managing a kid&rsquo;s lemonade stand. It had exercises to fill out like the balance sheet, income statement and the cashflow statement. It was a great introduction to accounting and I greatly enjoyed working through it. I recommend it to anyone who wants to understand the basics.</p>
+          <p>I was doing random things in the stock market. Buying and selling stock on news and vibes. I didn&rsquo;t have a process or strategy. Then I saw a random video on Youtube about Warren Buffett and his success as an investor. I was immediately drawn to it and read as much as I could about him and his letters. Followed other investors who walked the same path with their own flavors. This helped me immensely in my own decision making regarding investments. I still have a lot to learn and Warren&rsquo;s way is the direction I want to follow.</p>
         </div>
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-3">
           <span class="lbl">Read more</span><span class="car">▾</span>
         </button>
       </li>
+
+      <li class="work-item reveal" data-expand>
+        <div class="work-top">
+          <div class="work-name">⛩️ Anime - time waste or time well spent?</div>
+        </div>
+        <p class="work-teaser">I <em>was</em> a huge fan of Japanese anime and manga. Catching up on weekly episodes and looking up new shows to watch took a huge part of my free time. It was great entertainment but was it a good use of time?</p>
+        <div class="work-more" id="work-more-4">
+          <p>With a toddler there is very little time to be on top of the latest developments in the anime or TV world. We also want to raise her without screen time for as long as we can. This meant I had to cut back completely on watching TV shows and anime. It also posed a question, was all the time I spent watching useful or wasteful?</p>
+          <p>Japanese crafts are known for quality, the attention to detail and the process of the work, not just the result. This shows in all of the great anime, you can see and feel the effort that went into making them. I appreciate this aspect immensely. A few of the animes have good lessons that you should take to heart. I believe they add a lot of value.</p>
+          <p>To answer my question on whether it was a good use of time, you have to consider the alternative. If the alternative was doomscrolling or being intoxicated, anime was definitely a good use of time but if I read books instead then that would have probably been better. In hindsight, I wish to have spent more time reading books. However, from an entertainment perspective I believe anime is much better than the alternatives that hijack your neurotransmitters.</p>
+        </div>
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="work-more-4">
+          <span class="lbl">Read more</span><span class="car">▾</span>
+        </button>
+      </li>
+
     </ul>
   </section>
 
